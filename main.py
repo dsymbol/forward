@@ -12,7 +12,7 @@ async def on_ready():
 @dc.event
 async def on_message(message): 
     finalMessage = message.content
-    if (message.channel.id == discord_channel):
+    if message.channel.id in discord_channel:
         print("Forwarding: " + finalMessage)
         tg.sendMessage(telegram_chatid, finalMessage)
 
