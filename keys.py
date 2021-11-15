@@ -1,4 +1,4 @@
-#  Set the fields accordingly and rename to keys.py
+#  Set the fields accordingly
 
 discord_channel = [123456789123456789, 654321789123465889]
 discord_token = "gsHQ5wpRUHUiS8cW1lq55iyr.H3XifBCbs8dmUxaYinen8rQcPyLDJgKoZK"
