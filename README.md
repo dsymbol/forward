@@ -5,10 +5,10 @@ Automating user accounts is against the Discord ToS and puts your account at ris
 Simple Discord to Telegram one way forwarder, designed to work with user token for channels where bots are not permitted.
 
 ## Configuration
-Rename keys_example.py to keys.py and set the fields accordingly.
+Set the fields accordingly in `keys.py`
 - discord_channel: the discord id of the channel you want to forward.
 - discord_token: discord user token.
-- telegram_token: You can get this by speaking with @BotFather on telegram and creating a new bot.
+- telegram_token: you can get this by speaking with @BotFather on telegram and creating a new bot.
 - telegram_chatid: chatid of the telegram group you want to forward to.
 
 ## Installation
