@@ -4,22 +4,40 @@ Automating user accounts is against the Discord ToS and puts your account at ris
 
 Simple Discord to Telegram one way forwarder, designed to work with user token for channels where bots are not permitted.
 
-## Configuration
-Set the fields accordingly in `keys.py`
-- discord_channel: the discord id of the channel you want to forward.
-- discord_token: discord user token.
-- telegram_token: you can get this by speaking with @BotFather on telegram and creating a new bot.
-- telegram_chatid: chatid of the telegram group you want to forward to.
+## Prerequisites
 
-## Installation
-### Manually
-Make sure [Python](https://www.python.org/downloads/) is installed on your system and open a terminal.
+- [Python](https://www.python.org/downloads/)
+- [Docker](https://docs.docker.com/get-docker/) (If you intend on deploying the app as a Docker image)
+
+## Install
+
+There are two ways to begin using the bot, depending on your preference:
+
+### Manual
+
 ```
-1. git clone https://github.com/dsymbol/discord-telegram-bot
-2. pip install -r requirements.txt
-3. python main.py
+git clone https://github.com/dsymbol/discord-telegram-bot
+cd discord-telegram-bot
+pip install -r requirements.txt
+python main.py
 ```
+
 ### Docker CLI
+
 ```
-docker run -d -v `pwd`/keys.py:/app/keys.py dsymbol/discord-telegram-bot
+git clone https://github.com/dsymbol/discord-telegram-bot
+cd discord-telegram-bot
+docker build -t discord-telegram-bot .
+docker run -d -v `pwd`/keys.py:/app/keys.py discord-telegram-bot:latest
 ```
+
+## Configuration
+
+Edit `keys.py` accordingly:
+
+| Variable                       | Description                                   |
+| ------------------------------ | ----------------------------------------------|
+| discord_channel                | id of discord channel you want to forward     |
+| discord_token                  | discord user token                            |
+| telegram_token                 | id of telegram chat you want to forward to    |
+| telegram_chatid                | telegram bot token                            |
