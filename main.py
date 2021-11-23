@@ -1,20 +1,19 @@
-import discord
 from telegram import Bot
 from keys import *  
+import discord
 
 dc = discord.Client()
-tg = Bot(token=telegram_token)
+tg = Bot(token=TELEGRAM_TOKEN)
 
 @dc.event
 async def on_message(message): 
-    finalMessage = message.content
-    if message.channel.id in discord_channel:
-        print("[+] New message: " + finalMessage)
-        tg.sendMessage(telegram_chatid, finalMessage)
+    if message.channel.id in DISCORD_CHANNELS:
+        print(f"[+] {message.content}")
+        tg.sendMessage(TELEGRAM_CHAT_ID, message.content)
 
 def main():
-    print("Bot running, waiting for messages...")
-    dc.run(discord_token)
+    print("[!] Bot running, waiting for messages...")
+    dc.run(DISCORD_TOKEN)
 
 if __name__ == '__main__':
     main()
