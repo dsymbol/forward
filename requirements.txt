@@ -1,2 +1,0 @@
-discord.py-self
-python-telegram-bot
