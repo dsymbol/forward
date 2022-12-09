@@ -1,0 +1,2 @@
+telethon@https://github.com/LonamiWebs/Telethon/archive/v1.24.zip
+cryptg~=0.3

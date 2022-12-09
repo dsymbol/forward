@@ -1,0 +1,2 @@
+discord.py-self==1.9.2
+python-telegram-bot==13.14

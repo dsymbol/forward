@@ -1,0 +1,5 @@
+telegram-to-telegram
+====================
+
+Forward Telegram channel messages to others Telegram channels,
+designed to run as a user for channels where bots are not permitted.

@@ -1,29 +1,34 @@
 # forward
 
-A collection of social media forwarders, listen for new messages and forward them.  
-E.g. discord to telegram ~ forward messages from discord channels to a telegram channel 
+A collection of social media forwarders that listens for new messages and forwards them.    
+For example, you can forward messages from Discord to Telegram.
 
-## Dependencies
+## Getting Started
 
-- [Python](https://www.python.org/downloads/)
+You need to have [Python](https://www.python.org/downloads/) 3.x installed.
 
-## Usage
-
-To begin using the forwarder clone or [download](https://github.com/dsymbol/forward/archive/refs/heads/main.zip) the repository
+1. To begin using the forwarder clone or [download](https://github.com/dsymbol/forward/archive/refs/heads/main.zip) the repository
 
 ```bash
 git clone https://github.com/dsymbol/forward
 ```
 
-Navigate to the forward/src directory
+2. Navigate to the forwarder of your choosing
+
 ```bash
-cd forward/src
+cd forward/app/?
 ```
 
-Before running the chosen forwarder you must first set it up, open the .py file 
-with the notepad of your choosing, in the configuration section replace the example values with your own.  
-That's it! the script will take care of the package dependency installation simply run it.
+3. Install the module dependencies
+
 ```bash
-python your_chosen_forwarder.py
+pip install -r requirements.txt
 ```
 
+4. Replace the example values with your own in the settings.py file
+
+5. You should now be able to use the forwarder to forward messages as desired by running the forwarder
+
+```bash
+python bot.py
+```

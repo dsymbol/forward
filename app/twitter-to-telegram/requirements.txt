@@ -1,0 +1,2 @@
+tweepy@git+https://github.com/tweepy/tweepy.git@b18c1a6239e81cb5744fa99d392ec539de787e5c
+python-telegram-bot==13.14
