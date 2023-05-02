@@ -1,0 +1,5 @@
+discord-to-discord
+===================
+
+Forward messages from Discord channels to other Discord channels,
+designed to run as a user for channels where bots are not permitted.
