@@ -1,7 +1,7 @@
 import discord
 from telegram import Bot
 
-from settings import *
+from conf import *
 
 dc = discord.Client()
 tg = Bot(token=telegram_token)
@@ -19,8 +19,6 @@ async def on_message(message):
 
 
 if __name__ == '__main__':
-    print(__doc__)
     discord_channels = list(map(int, discord_channels.split(",")))
     telegram_chat_id = int(telegram_chat_id)
-    print("Running, waiting for messages...")
     dc.run(discord_token)

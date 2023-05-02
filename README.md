@@ -25,7 +25,7 @@ cd forward/app/?
 pip install -r requirements.txt
 ```
 
-4. Replace the example values with your own in the settings.py file
+4. Replace the example values with your own in the conf.py file
 
 5. You should now be able to use the forwarder to forward messages as desired by running the forwarder
 

@@ -3,6 +3,7 @@ import json
 import tweepy
 from telegram import Bot, ParseMode
 
+from conf import *
 
 class DataStream(tweepy.StreamingClient):
     def on_data(self, raw_data):
@@ -34,7 +35,6 @@ def create_rules(_users):
 
 
 if __name__ == "__main__":
-    print(__doc__)
     chat_id = int(chat_id)
     users, keywords = users.split(","), keywords.split(",") if keywords else None
     tg = Bot(token=token)

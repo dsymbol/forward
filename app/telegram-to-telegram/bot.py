@@ -5,6 +5,8 @@ from telethon import TelegramClient, events
 from telethon.tl.functions.messages import GetDialogsRequest
 from telethon.tl.types import InputPeerEmpty, MessageMediaUnsupported
 
+from conf import *
+
 client = TelegramClient('anon', api_id, api_hash)
 client.start()
 
@@ -47,7 +49,6 @@ async def main():
 
 
 if __name__ == "__main__":
-    print(__doc__)
     api_id = int(api_id)
     reading_channels = list(map(int, reading_channels.split(",")))
     writing_channels = list(map(int, writing_channels.split(",")))
